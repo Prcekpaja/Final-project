@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVAL</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <a href="/"><img class="header__logo" src="/images/logo1.webp" alt="logo"></a>
+    </header>
+    
+    <nav class="menu">
+        <ul class="menu__list">
+            <li><a class="menu__item" href="/">O nás</a></li>
+            <li><a class="menu__item" href="/teraine">Zkoušky v terénu</a></li>
+            <li><a class="menu__item" href="/lab">koušky v laboratoři</a>Z</li>
+            <li><a class="menu__item" href="/carier">Kariéra</a></li>
+            <li><a class="menu__item" href="/contact">Kontakt</a></li>
+            <li><a class="menu__item" href="/price">Ceník</a></li>
+            <li><a class="menu__item" href="/reference">Reference</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+
+        {{ content | safe }}
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__name">SVAL s.r.o.</p>
+        
+        <a href="mailto:objednavka@sval.cz" class="footer__email">objednavka@sval.cz</a>
+        
+        <p class="footer__tel">+420 555 555 555</p>
+        
+        <a href="mailto:kariera@sval.cz" class="footer__email-carier">kariera@sval.cz</a>
+        
+        <div class="footer__copyright">&copy;2024, Prckoland</div>
+
+        <button class="footer__button">Objednat</button>
+    
+    </footer>
+</body>
+</html>
