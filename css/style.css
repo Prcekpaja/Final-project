@@ -1,0 +1,40 @@
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Quicksand", arial, sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+  font-family: "Quicksand", arial, sans-serif;
+}
+
+p,
+nav,
+a {
+  font-size: 1em;
+}
+
+.background {
+  background-image: url(/images/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.header__logo {
+  height: 60px;
+}/*# sourceMappingURL=style.css.map */

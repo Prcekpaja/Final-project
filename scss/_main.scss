@@ -1,8 +1,22 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
 body {
-    font-family: Quicksand, arial, sans-serif;
-    background-image: url(/images/background.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    opacity: 0.3;
+    font-family: 'Quicksand', arial, sans-serif;
+
+
 }
+
+h1 {
+    font-size: 4em;
+    font-family: 'Quicksand', arial, sans-serif;
+}
+
+p,
+nav,
+a {
+    font-size: 1.0em;
+}
+
+
+
