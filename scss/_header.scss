@@ -1,8 +1,30 @@
+
+
+
+/*tohle je ze stránky*/
 .background {
+    position: relative; 
+     width: 100%;
+
+}
+
+.background::before {
+    content: "";
     background-image: url(/images/background.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.2;
+}
+/*tohle je ze stránky*/
+
+
+main {
+    position: relative;
+   
 }
 
 .header {
@@ -15,4 +37,25 @@
 .header__logo {
     height: 60px;
 
+}
+
+.menu {
+    background-color: #BD1114;
+}
+
+.menu__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.menu__link {
+    display: block;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
