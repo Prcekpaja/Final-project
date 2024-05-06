@@ -1,0 +1,39 @@
+@use 'barvy';
+
+.price {
+    width: 60%;
+    
+    // border: 1px dotted;
+    // padding-top: 2.5em;
+
+    .price__colum {
+        margin: 0 50px;
+        border: 1px dotted;
+    }
+
+    .price__row {
+        border: 1px dotted;
+    }
+
+    &__nadpis {
+        padding: 10px;
+    }
+
+    &__columi {
+        border: 1px dotted;
+        text-align: right;
+
+    }
+}
+
+.order {
+    margin: barvy.$button-margin;
+    background-color: barvy.$secondary;
+    // color: barvy.$menu-font;
+    padding: 0.5em;
+}
+
+.nadpis {
+    margin: 0;
+    padding: 0;
+}
