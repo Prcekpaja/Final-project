@@ -1,0 +1,34 @@
+.index {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    .main__uvod-i {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        max-width: 370 px;
+        margin: 50px 20px auto 50px;
+    }
+
+    .main__imgone {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        max-width: 350px;
+        margin: 50px 20px auto 50px;
+
+    }
+
+    .main__uvod-ii {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        max-width: 370px;
+        margin: 50px 20px auto 50px;
+    }
+
+    .main__imgtwo {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        max-width: 350px;
+        margin: 50px 20px 50px 50px;
+    }
+}

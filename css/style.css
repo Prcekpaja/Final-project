@@ -7,6 +7,10 @@ html {
   box-sizing: inherit;
 }
 
+html {
+  min-height: 100%;
+}
+
 body {
   font-family: "Quicksand", arial, sans-serif;
 }
@@ -22,6 +26,11 @@ a {
   font-size: 1em;
 }
 
+.main {
+  min-height: 100vh;
+  padding: 0;
+}
+
 /*tohle je ze stránky*/
 .background {
   position: relative;
@@ -30,7 +39,7 @@ a {
 
 .background::before {
   content: "";
-  background-image: url(/images/background.jpg);
+  background-image: url(/images/background-medium.jpg);
   background-size: cover;
   position: absolute;
   top: 0px;
@@ -87,8 +96,8 @@ ul {
 .footer {
   background-color: #BD1114;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
   justify-items: center;
   align-items: center;
   margin: 0;
@@ -105,9 +114,15 @@ ul {
   grid-column: 1/2;
   grid-row: 2/2;
 }
+.footer__lastname {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding: 0;
+  margin: 0;
+}
 .footer .footer__tel {
   grid-column: 2/2;
-  grid-row: 1/3;
+  grid-row: 2/3;
 }
 .footer .footer__email-carier {
   grid-row: 1/3;
@@ -120,8 +135,8 @@ ul {
   background-color: #7D7676;
 }
 .footer .footer__copyright {
-  grid-row: 1/3;
-  grid-column: 5/6;
+  grid-row: 4/4;
+  grid-column: 1/5;
 }
 
 .price {
@@ -151,4 +166,34 @@ ul {
 .nadpis {
   margin: 0;
   padding: 0;
+}
+
+.index {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.index .main__uvod-i {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  max-width: 370 px;
+  margin: 50px 20px auto 50px;
+}
+.index .main__imgone {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  max-width: 350px;
+  margin: 50px 20px auto 50px;
+}
+.index .main__uvod-ii {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  max-width: 370px;
+  margin: 50px 20px auto 50px;
+}
+.index .main__imgtwo {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  max-width: 350px;
+  margin: 50px 20px 50px 50px;
 }/*# sourceMappingURL=style.css.map */
