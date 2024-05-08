@@ -2,11 +2,88 @@
 layout: main.njk
 ---
 
-<form method="get"  action="" class="form">
-    <input type="text" name="Jméno" placeholder="Jméno" class="form__name">
-    <input type="text" name="Příjmení" placeholder="Příjmení" class="form__name">
-    <input type="email" name="Email" placeholder="Email" class="form__name">
-    <input type="tel" name="Telefon" placeholder="Telefon" class="form__name">
-    <input type="text" name="Zájem" placeholder="Mám zájem o" class="form__name">
-    <textarea type="text" name="Message" placeholder="Zpráva" rows="15" cols="30" class="form__name"></textarea>
-</form>
+<form method="get"  action="">
+    <div class="form jmenicko">
+        <label for="jmeno">Jméno</label>
+        <input 
+            type="text" 
+            name="jmeno" 
+            placeholder="Jméno"
+            id="jmeno" 
+            class="form__name"
+            required>
+    </div>
+
+<div class="form">
+    <label for="prijmeni">Příjmení</label>
+    <input 
+        type="text" 
+        name="prijmeni" 
+        placeholder="Příjmení" 
+        id="prijmeni"
+        class="form__name"
+        required>
+</div>
+
+<div class="form">
+        <label for="email">E-mail</label>
+        <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail"
+            value="@"
+            class="form__name"
+            required>
+</div>
+
+<div class="form">
+        <label for="tel">Telefon</label>
+        <input 
+            type="tel" 
+            name="telefon" 
+            id="tel"
+            placeholder="Telefon" 
+            value="+420" 
+            class="form__name"
+            required>
+</div>
+
+<div class="form">
+        <label for="zajem">Mám zájem o</label>
+
+        <select name="zajem" id="zajem">
+            <option value="">SZZ</option>
+            <option value="">LDD</option>
+            <option value="">Membránový objemoměr</option>
+            <option value="">Troxler</option>
+            <option value="">Jádrové vývrty</option>
+            <option value="">Vrtané sondy</option>
+            <option value="">Kopané sondy</option>
+            <option value="">RPZ</option>
+            <option value="">Sítový rozbor</option>
+            <option value="">RAS</option>
+            <option value="">ITT asfaltové směsi</option>
+            <option value="">ITT zeminy</option>
+            <option value="">Diagnostika</option>
+            <option value="">Měření podélné a příčné nerovnosti</option>
+            <option value="">Měření podélné nerovnosti</option>
+            <option value="">Více možností</option>
+        </select>
+</div>
+
+<div class="form">
+        <label for="message">Zpráva</label>
+        <textarea
+            type="text"
+            name="message"
+            id="message"
+            placeholder="Pro výběr více možností, napište zde"
+            rows="15"
+            cols="30"
+            class="form__name">
+        </textarea>
+</div>
+
+<button type="submit" name="odeslat" id="odeslat" class="submit">Odeslat</button>
+    </form>

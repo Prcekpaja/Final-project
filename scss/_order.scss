@@ -1,0 +1,35 @@
+@use 'barvy';
+
+form {
+    width: 100%;
+    max-width: 60%;
+}
+
+.form {
+    display: flex;
+    padding: 1em;
+}
+
+.form label {
+    flex: 0 0 20%;
+
+}
+
+.form input {
+    flex: 1 1 100%;
+    background-color: #FF7373;
+}
+
+.form select,
+.form textarea {
+    flex: 1 1 100%;
+    background-color: #FF7373;
+}
+
+.jmenicko {
+    padding-top: 5em;
+}
+
+.submit {
+    margin-left: 50%;
+}

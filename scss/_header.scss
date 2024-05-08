@@ -1,4 +1,4 @@
-
+@use 'barvy';
 
 
 /*tohle je ze stránky*/
@@ -40,7 +40,7 @@ main {
 }
 
 .menu {
-    background-color: #BD1114;
+    background-color: barvy.$primary;
 }
 
 .menu__list {
