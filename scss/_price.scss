@@ -28,7 +28,6 @@
 
 .order {
     margin: barvy.$button-margin;
-    background-color: barvy.$secondary;
     // color: barvy.$menu-font;
     padding: 0.5em;
 }
@@ -36,4 +35,8 @@
 .nadpis {
     margin: 0;
     padding: 0;
+}
+
+.order__link {
+    padding: 0.5em;
 }
