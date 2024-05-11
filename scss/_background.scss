@@ -1,0 +1,26 @@
+
+/*tohle je ze stránky*/
+.background {
+    position: relative; 
+    width: 100%;
+
+}
+
+.background::before {
+    content: "";
+    background-image: url(/images/background-medium.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.15;
+}
+/*tohle je ze stránky*/
+
+
+main {
+    position: relative;
+   
+}

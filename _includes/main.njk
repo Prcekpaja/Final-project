@@ -13,25 +13,47 @@
 </head>
 <body>
     
-    <header class="header">
-    
-        <a href="/"><img class="header__logo" src="/images/logo1.webp" alt="logo"></a>
+    <h1>Akreditovaná zkušební laboratoř</h1>
 
-        <h1>Akreditovaná zkušební laboratoř</h1>
+    <header>
+    
+        <div id="brand">
+            <a href="/">
+                <img class="header__logo" src="/images/logo1.webp" alt="logo">
+            </a>
+        </div>
+            
+        <nav>
+            <ul>
+                <li><a href="/">O nás</a></li>
+                <li><a href="/teraine">Zkoušky v terénu</a></li>
+                <li><a href="/lab">Zkoušky v laboratoři</a></li>
+                <li><a href="/carrier">Kariéra</a></li>
+                <li><a href="/contact">Kontakt</a></li>
+                <li><a href="/price">Ceník</a></li>
+                <li><a href="/reference">Reference</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            
+            <ul class="mobile-menu">
+                <li><a href="/">O nás</a></li>
+                <li><a href="/teraine">Zkoušky v terénu</a></li>
+                <li><a href="/lab">Zkoušky v laboratoři</a></li>
+                <li><a href="/carrier">Kariéra</a></li>
+                <li><a href="/contact">Kontakt</a></li>
+                <li><a href="/price">Ceník</a></li>
+                <li><a href="/reference">Reference</a></li>
+       
+            </ul>
+        </div>
 
     </header>
-    
-    <nav class="menu">
-        <ul class="menu__list">
-            <li><a class="menu__link" href="/">O nás</a></li>
-            <li><a class="menu__link" href="/teraine">Zkoušky v terénu</a></li>
-            <li><a class="menu__link" href="/lab">Zkoušky v laboratoři</a></li>
-            <li><a class="menu__link" href="/carrier">Kariéra</a></li>
-            <li><a class="menu__link" href="/contact">Kontakt</a></li>
-            <li><a class="menu__link" href="/price">Ceník</a></li>
-            <li><a class="menu__link" href="/reference">Reference</a></li>
-        </ul>
-    </nav>
+
+    <script src="index.js"></script>
 
     <div class="background">
 
