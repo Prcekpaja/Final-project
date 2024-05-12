@@ -2,7 +2,7 @@
 
 form {
     width: 100%;
-    max-width: 40%;
+    max-width: 100%;
 }
 
 .form {
@@ -11,7 +11,7 @@ form {
 }
 
 .form label {
-    flex: 0 0 20%;
+    flex: 0 0 30%;
 
 }
 
@@ -31,5 +31,6 @@ form {
 }
 
 .submit {
-    margin-left: 50%;
+    margin-left: 30%;
+    padding: 1em;
 }

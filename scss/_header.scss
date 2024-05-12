@@ -25,7 +25,7 @@ header {
     margin-top: 1em;
 }
 
-ul {
+nav ul {
     list-style: none;
     height: 100%;
     display: flex;
@@ -34,16 +34,16 @@ ul {
 
 }
 
-ul a {
+nav ul a {
     color: white;
 }
 
-ul li {
+nav ul li {
     padding: 5px;
     margin-left: 10px;
 }
 
-ul li:hover {
+nav ul li:hover {
     transform: scale(1.1);
     transition: 0.3s;
 }

@@ -1,7 +1,18 @@
 .reference {
     display: inline-block;
+    padding-top: 2em;
+    padding-left: 3em;
+    text-align: left;
+
+
+    &__ul {
+        list-style: none;
+        display: inline-block;
+
+    }
 }
 
-ul {
-    list-style: none;
+li a {
+    color: black;
+
 }

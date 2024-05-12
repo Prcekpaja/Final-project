@@ -1,7 +1,8 @@
 @use 'barvy';
 
 .price {
-    width: 60%;
+    width: 80%;
+    margin: 0.5em auto;
     
     // border: 1px dotted;
     // padding-top: 2.5em;
@@ -22,14 +23,19 @@
     &__columi {
         border: 1px dotted;
         text-align: right;
+    }
 
+    &__paragraph {
+        margin: 2em auto;
+        text-align: center;
     }
 }
 
 .order {
-    margin: barvy.$button-margin;
+    margin: 2em auto;
     // color: barvy.$menu-font;
     padding: 0.5em;
+    margin: 0 45%;
 }
 
 .nadpis {
@@ -37,6 +43,6 @@
     padding: 0;
 }
 
-.order__link {
-    padding: 0.5em;
-}
+// .order__link {
+//     padding: 0.5em;
+// }

@@ -63,3 +63,22 @@
 .foote__button {
     text-decoration: none;
 }
+
+@media screen and (max-width: 600px) {
+    .footer {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+
+        &__name,
+        &__email,
+        &__lastname,
+        &__tel,
+        &__email-carier,
+        &__button,
+        &__copyright {
+            margin-bottom: 1em;
+            margin-top: 1em;
+        }
+    }
+}

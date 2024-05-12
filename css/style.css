@@ -31,6 +31,11 @@ a {
   padding: 0;
 }
 
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -55,7 +60,7 @@ header {
   margin-top: 1em;
 }
 
-ul {
+nav ul {
   list-style: none;
   height: 100%;
   display: flex;
@@ -63,16 +68,16 @@ ul {
   justify-content: space-around;
 }
 
-ul a {
+nav ul a {
   color: white;
 }
 
-ul li {
+nav ul li {
   padding: 5px;
   margin-left: 10px;
 }
 
-ul li:hover {
+nav ul li:hover {
   transform: scale(1.1);
   transition: 0.3s;
 }
@@ -129,10 +134,17 @@ ul li:hover {
 }
 .reference {
   display: inline-block;
+  padding-top: 2em;
+  padding-left: 3em;
+  text-align: left;
+}
+.reference__ul {
+  list-style: none;
+  display: inline-block;
 }
 
-ul {
-  list-style: none;
+li a {
+  color: black;
 }
 
 .footer {
@@ -191,8 +203,20 @@ ul {
   text-decoration: none;
 }
 
+@media screen and (max-width: 600px) {
+  .footer {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  .footer__name, .footer__email, .footer__lastname, .footer__tel, .footer__email-carier, .footer__button, .footer__copyright {
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+}
 .price {
-  width: 60%;
+  width: 80%;
+  margin: 0.5em auto;
 }
 .price .price__colum {
   margin: 0 50px;
@@ -208,19 +232,20 @@ ul {
   border: 1px dotted;
   text-align: right;
 }
+.price__paragraph {
+  margin: 2em auto;
+  text-align: center;
+}
 
 .order {
-  margin: 5em;
+  margin: 2em auto;
   padding: 0.5em;
+  margin: 0 45%;
 }
 
 .nadpis {
   margin: 0;
   padding: 0;
-}
-
-.order__link {
-  padding: 0.5em;
 }
 
 .index {
@@ -233,36 +258,55 @@ ul {
   grid-column: 1/2;
   grid-row: 1/2;
   width: 50%;
-  margin: 50px 20px auto 50px;
+  margin: 50px auto;
+  margin-bottom: 0;
 }
 .index .main__imgone {
   grid-column: 2/3;
   grid-row: 1/2;
   width: 100%;
-  padding: 2em 5em 2em 5em;
+  margin: 2em auto 0 auto;
 }
 .index .main__uvod-ii {
   grid-column: 2/3;
   grid-row: 2/3;
   width: 50%;
-  margin: 50px 20px auto 50px;
+  margin: 0 auto 0 auto;
 }
 .index .main__imgtwo {
   grid-column: 1/2;
   grid-row: 2/3;
   width: 100%;
-  margin: 50px 20px 50px 50px;
+  margin: 0 auto 0 2em;
 }
 
-@media screen and (max-width: 450px) and (orientation: landscape) {
+@media screen and (max-width: 600px) {
   .index {
     display: inline-block;
     width: 100%;
   }
+  .index .main__uvod-i,
+  .index .main__imgone,
+  .index .main__imgtwo,
+  .index .main__uvod-ii {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+  }
+  .index .main__imgone,
+  .index .main__imgtwo {
+    display: block;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 form {
   width: 100%;
-  max-width: 40%;
+  max-width: 100%;
 }
 
 .form {
@@ -271,7 +315,7 @@ form {
 }
 
 .form label {
-  flex: 0 0 20%;
+  flex: 0 0 30%;
 }
 
 .form input {
@@ -290,7 +334,8 @@ form {
 }
 
 .submit {
-  margin-left: 50%;
+  margin-left: 30%;
+  padding: 1em;
 }
 
 .carrier {
@@ -304,6 +349,13 @@ form {
 .carrier .email-carier {
   color: black;
   text-decoration: none;
+  font-weight: bold;
+}
+.carrier__paragraph, .carrier__h {
+  padding-bottom: 1em;
+}
+.carrier__para {
+  padding-top: 2em;
 }
 
 /*tohle je ze stránky*/
@@ -335,7 +387,7 @@ main {
 .diag {
   display: grid;
   grid-template-columns: 20% 60%;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.7fr 1.5fr;
 }
 .rpz__lab,
 .sr__lab,
@@ -379,4 +431,69 @@ main {
   .diag__img {
     max-height: 200px;
   }
+}
+.szz,
+.ldd,
+.mob,
+.trox {
+  display: grid;
+  grid-template-columns: 60% 20%;
+  grid-template-rows: 0.7fr 1.5fr;
+}
+.szz__teraine,
+.ldd__teraine,
+.mob__teraine,
+.trox__teraine {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin: 0;
+  padding: 0;
+}
+.szz__paragraph,
+.ldd__paragraph,
+.mob__paragraph,
+.trox__paragraph {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding-bottom: 5%;
+}
+.szz__img,
+.ldd__img,
+.mob__img,
+.trox__img {
+  max-height: 250px;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .szz,
+  .ldd,
+  .mob,
+  .trox {
+    display: inline-block;
+    text-align: center;
+  }
+  .szz__img,
+  .ldd__img,
+  .mob__img,
+  .trox__img {
+    max-height: 200px;
+  }
+}
+.contact {
+  text-align: center;
+}
+.contact__nadpis {
+  padding-top: 1em;
+}
+.contact__paragraph {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.contact__button {
+  padding: 0.7em;
 }/*# sourceMappingURL=style.css.map */
