@@ -17,6 +17,7 @@
         grid-row: 1 / 2;
         width: 100%;
         margin: 2em auto 0 auto;
+        padding-right: 2em;
     }
 
     .main__uvod-ii {
@@ -31,10 +32,11 @@
         grid-row: 2 / 3;
         width: 100%;
         margin: 0 auto 0 2em;
+        margin-bottom: 2em;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 
     .index {
         display: inline-block;

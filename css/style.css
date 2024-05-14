@@ -31,7 +31,7 @@ a {
   padding: 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   h1 {
     font-size: 2em;
   }
@@ -60,7 +60,8 @@ header {
   margin-top: 1em;
 }
 
-nav ul {
+nav ul,
+div ul {
   list-style: none;
   height: 100%;
   display: flex;
@@ -68,13 +69,16 @@ nav ul {
   justify-content: space-around;
 }
 
-nav ul a {
+nav ul a,
+div ul a {
   color: white;
 }
 
-nav ul li {
+nav ul li,
+div ul li {
   padding: 5px;
   margin-left: 10px;
+  background-color: #BD1114;
 }
 
 nav ul li:hover {
@@ -113,18 +117,19 @@ nav ul li:hover {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  background-color: #BD1114;
 }
 
 .mobile-menu {
   display: none;
   position: absolute;
-  top: 50px;
+  top: 4em;
   left: 0;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 4em);
   width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   header nav {
     display: none;
   }
@@ -203,7 +208,7 @@ li a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .footer {
     display: inline-block;
     width: 100%;
@@ -266,6 +271,7 @@ li a {
   grid-row: 1/2;
   width: 100%;
   margin: 2em auto 0 auto;
+  padding-right: 2em;
 }
 .index .main__uvod-ii {
   grid-column: 2/3;
@@ -278,9 +284,10 @@ li a {
   grid-row: 2/3;
   width: 100%;
   margin: 0 auto 0 2em;
+  margin-bottom: 2em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .index {
     display: inline-block;
     width: 100%;
@@ -353,9 +360,15 @@ form {
 }
 .carrier__paragraph, .carrier__h {
   padding-bottom: 1em;
+  padding-left: 2em;
 }
 .carrier__para {
   padding-top: 2em;
+  padding-left: 2em;
+}
+.carrier__list {
+  padding-left: 2em;
+  list-style: none;
 }
 
 /*tohle je ze stránky*/
@@ -386,7 +399,7 @@ main {
 .ras,
 .diag {
   display: grid;
-  grid-template-columns: 20% 60%;
+  grid-template-columns: 30% 60%;
   grid-template-rows: 0.7fr 1.5fr;
 }
 .rpz__lab,
@@ -396,7 +409,8 @@ main {
   grid-column: 1/2;
   grid-row: 1/2;
   margin: 0;
-  padding: 0;
+  padding-left: 2em;
+  padding-top: 2em;
 }
 .rpz__paragraph,
 .sr__paragraph,
@@ -404,6 +418,8 @@ main {
 .diag__paragraph {
   grid-column: 1/2;
   grid-row: 2/3;
+  padding-left: 2em;
+  margin-top: 1em;
 }
 .rpz__img,
 .sr__img,
@@ -412,17 +428,17 @@ main {
   max-height: 250px;
   grid-column: 2/3;
   grid-row: 1/3;
-  padding: 10px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .rpz,
   .sr,
   .ras,
   .diag {
-    display: inline-block;
+    display: block;
     text-align: center;
   }
   .rpz__img,
@@ -430,6 +446,21 @@ main {
   .ras__img,
   .diag__img {
     max-height: 200px;
+    padding: 1em 0 1em 0;
+  }
+  .rpz__lab,
+  .sr__lab,
+  .ras__lab,
+  .diag__lab {
+    margin: 0;
+    padding: 1em;
+  }
+  .rpz__paragraph,
+  .sr__paragraph,
+  .ras__paragraph,
+  .diag__paragraph {
+    margin: 0;
+    padding: 0;
   }
 }
 .szz,
@@ -448,6 +479,7 @@ main {
   grid-row: 1/2;
   margin: 0;
   padding: 0;
+  padding-top: 2em;
 }
 .szz__paragraph,
 .ldd__paragraph,
@@ -456,20 +488,22 @@ main {
   grid-column: 2/3;
   grid-row: 2/3;
   padding-bottom: 5%;
+  padding-top: 1em;
 }
 .szz__img,
 .ldd__img,
 .mob__img,
 .trox__img {
-  max-height: 250px;
+  max-height: 300px;
   grid-column: 1/2;
   grid-row: 1/3;
-  padding: 10px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 3em;
+  margin-bottom: 1em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .szz,
   .ldd,
   .mob,

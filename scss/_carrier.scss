@@ -18,9 +18,16 @@
     &__paragraph,
     &__h {
         padding-bottom: 1em;
+        padding-left: 2em;
     }
 
     &__para {
         padding-top: 2em;
+        padding-left: 2em;
+    }
+
+    &__list {
+        padding-left: 2em;
+        list-style: none;
     }
 }
