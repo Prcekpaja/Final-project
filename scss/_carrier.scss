@@ -31,3 +31,18 @@
         list-style: none;
     }
 }
+
+@media screen and (max-width: 800px) {
+    .carrier {
+        text-align: center;
+
+        &__paragraph,
+        &__h,
+        &__para,
+        &__list {
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+        }
+
+    }
+}

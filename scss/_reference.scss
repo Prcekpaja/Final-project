@@ -1,18 +1,26 @@
 .reference {
-    display: inline-block;
+    // display: inline-block;
     padding-top: 2em;
     padding-left: 3em;
-    text-align: left;
+    // text-align: left;
 
 
-    &__ul {
-        list-style: none;
-        display: inline-block;
-
-    }
 }
 
-li a {
+a {
     color: black;
 
 }
+
+@media screen and (max-width: 800px) {
+    .reference__p {
+        display: block;
+        padding-left: 0;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
+
